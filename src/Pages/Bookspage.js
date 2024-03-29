@@ -11,13 +11,6 @@ import { ScrollTop } from '../Components/ScrollTop';
 
 
 const Bookspage = () => {
-  // const handleScrollTop = () =>{
-  //   window.scrollTo({
-  //     top: 0,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   })
-  // }
   const {books, booksLoading,refreshBooks,err} = useContext(BookContext);
   useEffect(()=>{
     refreshBooks()
