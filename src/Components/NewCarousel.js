@@ -2,14 +2,19 @@ import React from'react'
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Box } from '@mui/material';
 const images =[
-"https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip",
+"https://static.vecteezy.com/system/resources/thumbnails/035/257/473/small_2x/ai-generated-a-vintage-wooden-bookshelf-with-old-books-horizontal-banner-photo.jpg",
 "https://assets.teenvogue.com/photos/5e6bffbbdee1770008c6d9bd/16:9/w_2560%2Cc_limit/GettyImages-577674005.jpg",
 "https://media.karousell.com/media/photos/products/2018/10/04/one_piece_english_manga_1538616012_d2bc1a27_progressive.jpg"
 ]
 function NewCarousel(){
     return(
-        <Box sx={{ maxWidth: "80vw",flexGrow: 1,margin: 'auto', mt: 5 }}>
-            <Carousel autoPlay = "true" >
+        <Box sx={{width:"100%",flexGrow: 1}}>
+            <Carousel autoPlay = "true" navButtonsWrapperProps={{ 
+        style: {
+            bottom: '15%',
+            top: 'unset'
+        }
+    }} >
                 {images.map((image,i)=>(
                     <Paper key={i} elevation={10}>
                         <Box

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react'
+import React, { useEffect, useContext, useState, useRef } from 'react'
 import axios from 'axios';
 import { BookContext } from '../BookContextProvider';
 import { CircularProgress } from '@mui/material';
@@ -6,9 +6,18 @@ import { Book } from '../Components/Book';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Loading from '../Components/Loading';
+import Button from '@mui/material/Button';
+import { ScrollTop } from '../Components/ScrollTop';
 
 
 const Bookspage = () => {
+  // const handleScrollTop = () =>{
+  //   window.scrollTo({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   })
+  // }
   const {books, booksLoading,refreshBooks,err} = useContext(BookContext);
   useEffect(()=>{
     refreshBooks()
@@ -27,6 +36,7 @@ const Bookspage = () => {
           </Grid>
         </Grid>
       </Grid>: <div style={{position: 'absolute',top: '50%',left: '50%',transform: 'translate(0, -50%)'}}><Loading/></div>}
+      <div style = {{position:"fixed", bottom:0,right:0,}}><ScrollTop/></div>
     </div>
   )
 }
