@@ -12,7 +12,7 @@ function App() {
   return (
     <BookContextProvider>
       <BrowserRouter>
-        <div className="App">
+        <div className="App" style = {{backgroundColor:"#B8E2F2"}}>
           <Navbar/>
           <Routes>
                 <Route path = "/" element={<Homepage/>}/>

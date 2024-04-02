@@ -11,6 +11,6 @@ export const ScrollTop = () => {
     return (
         <div><ArrowCircleUpIcon sx = {{":hover": {
             backgroundColor: "#ececec"
-          },cursor: "pointer", borderRadius:"40%"}} color = "primary" fontSize = "large" onClick = {()=>handleScrollTop()}/></div>
+          },cursor: "pointer", borderRadius:"40%", color: "black"}}  fontSize = "large" onClick = {()=>handleScrollTop()}/></div>
     )
 }
