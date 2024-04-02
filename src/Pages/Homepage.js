@@ -2,12 +2,14 @@ import NewCarousel from "../Components/NewCarousel";
 import { NewArrivalGrid } from "../Components/NewArrivalGrid";
 import { ScrollTop } from "../Components/ScrollTop";
 import { Footer } from "../Components/Footer";
+import { RecommendationGrid } from "../Components/RecommendationGrid";
 const Homepage = () =>{
     return(
         <div>
             <div>                
                 <NewCarousel/>
                 <NewArrivalGrid/>
+                <RecommendationGrid/>
                 <Footer/>
             </div>
             
