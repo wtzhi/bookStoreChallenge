@@ -28,7 +28,7 @@ export const Book = ({props}) => {
               transform: "scale(1.1)"
             }}}>
                     <CardContent>
-                        <Typography variant="h7" color="text.secondary">
+                        <Typography variant="h7" color="black">
                             {title}
                         </Typography>
                         <Typography variant="h8" color="text.secondary" display = "block">
