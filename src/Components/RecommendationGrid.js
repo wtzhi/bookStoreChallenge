@@ -32,7 +32,7 @@ export const RecommendationGrid = () => {
         }
       };
     return (
-        <div style = {{position:"relative",left: "50%",transform: "translate(-50%)",width:"90%",position:"relative", marginTop:"20px", backgroundColor:"#f5f5f5",borderRadius:"50px"}}>
+        <div style = {{marginTop:"50px",position:"relative",left: "50%",transform: "translate(-50%)",width:"90%",position:"relative", backgroundColor:"#f5f5f5",borderRadius:"50px"}}>
             {books ? 
              <Box sx={{flexGrow: 1, position:"relative",left: "50%",transform: "translate(-50%)",justifyContent:"center", alignItems:"center"}}>
                 <p style = {{position:"relative",fontFamily: "Georgia, serif",fontSize:"30px"}}>Recommendations</p>
