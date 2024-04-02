@@ -35,8 +35,8 @@ const Bookpage = () => {
       {openModal?<PurchaseModal isOpen = {openModal} onClose = {()=>{setOpenModal(false)}} name = {bookInfo.title} price = {bookInfo.price} id = {id} refresh = {()=>{setNeedRefresh(!needRefresh)}}/>:<></>}
 
       {bookInfo?
-      <div>
-          <div style = {{display:"flex",flexDirection:"row",margin: "50px"}}>
+      <div style = {{width:"100%", height:"100%",backgroundColor:"white"}}>
+          <div style = {{display:"flex",flexDirection:"row",paddingTop:"50px"}}>
               <Card variant="outlined" sx={{ width: "20vw", height:"25vw", maxWidth: 400, maxHeight:450, mx: "50px", boxShadow:"3"}}>
                 <CardContent>
                   <Typography variant="h5" color="text.secondary">
@@ -47,7 +47,7 @@ const Bookpage = () => {
                   </Typography>
                 </CardContent>
               </Card>
-              <div style = {{textAlign: 'left', fontSize:"20px", lineHeight:"40px"}}>
+              <div style = {{textAlign: 'left', fontSize:"20px", lineHeight:"40px", }}>
                 <p>Title: {bookInfo.title}</p>
                 <p>Author: {bookInfo.author}</p>
                 <p>Price: ${bookInfo.price}</p>
