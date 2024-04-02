@@ -10,7 +10,7 @@ export const NewArrivalGrid = () => {
 
     
   return (
-    <div style = {{position:"absolute",left: "50%",transform: "translate(-50%)",marginTop:"20px", backgroundColor:"#f5f5f5", width:"90vw"}}>
+    <div style = {{position:"relative",left: "50%",transform: "translate(-50%)",marginTop:"20px", backgroundColor:"#f5f5f5", width:"90vw"}}>
         <p style = {{position:"relative",fontFamily: "Georgia, serif",fontSize:"30px"}}>New Arrival</p>
     {books ? 
         <Grid  sx={{ flexGrow: 1, marginTop:"20px", direction:"row"}} container spacing={1} columns={5}>

@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import Loading from '../Components/Loading';
 import Button from '@mui/material/Button';
 import { ScrollTop } from '../Components/ScrollTop';
+import { Footer } from '../Components/Footer';
 
 
 const Bookspage = () => {
@@ -30,6 +31,8 @@ const Bookspage = () => {
         </Grid>
       </Grid>: <div style={{position: 'absolute',top: '50%',left: '50%',transform: 'translate(0, -50%)'}}><Loading/></div>}
       <div style = {{position:"fixed", bottom:0,right:0,}}><ScrollTop/></div>
+      <Footer/>
+
     </div>
   )
 }

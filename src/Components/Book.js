@@ -24,7 +24,9 @@ export const Book = ({props}) => {
     }
     return (
         <div onClick={handleBookClick}>
-            <Card variant="outlined" sx={{ width: "15vw", height:"20vw", maxWidth: 400,maxHeight:450, mx: "50px",boxShadow:"3"}}>
+            <Card variant="outlined" sx={{ width: "15vw", height:"20vw", maxWidth: 400,maxHeight:450, mx: "50px",boxShadow:"3",transition: "transform .2s", ":hover": {
+              transform: "scale(1.1)"
+            }}}>
                     <CardContent>
                         <Typography variant="h7" color="text.secondary">
                             {title}
